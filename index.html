@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>SaaSify - Your Business Solution</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',sans-serif;color:#333}
+nav{padding:1.2rem 5%;display:flex;justify-content:space-between;align-items:center;background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.08);position:sticky;top:0;z-index:100}
+.logo{font-size:1.6rem;font-weight:800;color:#6c63ff}
+nav ul{list-style:none;display:flex;gap:2rem}
+nav a{text-decoration:none;color:#555;font-weight:500;transition:.3s}
+nav a:hover{color:#6c63ff}
+.nav-btn{background:#6c63ff;color:#fff!important;padding:.5rem 1.5rem;border-radius:25px}
+.hero{background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:6rem 5%;text-align:center}
+.hero h1{font-size:3.5rem;font-weight:800;margin-bottom:1.5rem;line-height:1.2}
+.hero p{font-size:1.2rem;opacity:.9;margin-bottom:2.5rem;max-width:600px;margin-left:auto;margin-right:auto}
+.hero-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+.btn-primary{background:#fff;color:#6c63ff;padding:.9rem 2.5rem;border-radius:30px;font-weight:700;text-decoration:none;transition:.3s}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:0 10px 25px rgba(0,0,0,.2)}
+.btn-outline{border:2px solid #fff;color:#fff;padding:.9rem 2.5rem;border-radius:30px;font-weight:700;text-decoration:none;transition:.3s}
+.btn-outline:hover{background:#fff;color:#6c63ff}
+.features{padding:5rem 5%;background:#f8f9ff}
+h2.title{text-align:center;font-size:2.5rem;margin-bottom:1rem;color:#2d2d2d}
+.subtitle{text-align:center;color:#777;margin-bottom:3rem;font-size:1.1rem}
+.features-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem;max-width:1100px;margin:0 auto}
+.feature-card{background:#fff;padding:2rem;border-radius:15px;box-shadow:0 5px 20px rgba(0,0,0,.07);transition:.3s}
+.feature-card:hover{transform:translateY(-5px);box-shadow:0 15px 35px rgba(0,0,0,.12)}
+.feature-icon{font-size:2.5rem;margin-bottom:1rem}
+.feature-card h3{margin-bottom:.7rem;color:#2d2d2d}
+.feature-card p{color:#777;line-height:1.7}
+.pricing{padding:5rem 5%;text-align:center}
+.pricing-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:2rem;max-width:900px;margin:0 auto}
+.price-card{background:#fff;border-radius:20px;padding:2.5rem;box-shadow:0 5px 20px rgba(0,0,0,.08);transition:.3s;border:2px solid transparent}
+.price-card.popular{border-color:#6c63ff;transform:scale(1.05)}
+.price-card:hover{box-shadow:0 15px 40px rgba(0,0,0,.15)}
+.popular-badge{background:#6c63ff;color:#fff;padding:.3rem 1rem;border-radius:20px;font-size:.8rem;font-weight:600;margin-bottom:1rem;display:inline-block}
+.price{font-size:3rem;font-weight:800;color:#6c63ff}
+.price span{font-size:1rem;color:#777}
+.price-card ul{list-style:none;margin:1.5rem 0;text-align:left}
+.price-card ul li{padding:.5rem 0;color:#555;border-bottom:1px solid #f0f0f0}
+.price-card ul li::before{content:"✅ ";margin-right:.5rem}
+.price-btn{display:block;background:#6c63ff;color:#fff;padding:.9rem;border-radius:10px;text-decoration:none;font-weight:600;transition:.3s;margin-top:1rem}
+.price-btn:hover{background:#5a52d5}
+footer{background:#2d2d2d;color:#fff;text-align:center;padding:2rem;font-size:.9rem}
+footer span{color:#6c63ff}
+@media(max-width:768px){.hero h1{font-size:2.2rem}.price-card.popular{transform:none}}
+</style>
+</head>
+<body>
+<nav>
+  <div class="logo">SaaSify</div>
+  <ul>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#" class="nav-btn">Get Started</a></li>
+  </ul>
+</nav>
+<section class="hero">
+  <h1>Grow Your Business<br/>10x Faster</h1>
+  <p>The all-in-one platform that helps teams collaborate, automate, and scale without the complexity.</p>
+  <div class="hero-btns">
+    <a href="#" class="btn-primary">Start Free Trial</a>
+    <a href="#features" class="btn-outline">Learn More</a>
+  </div>
+</section>
+<section class="features" id="features">
+  <h2 class="title">Everything You Need</h2>
+  <p class="subtitle">Powerful tools to supercharge your workflow</p>
+  <div class="features-grid">
+    <div class="feature-card"><div class="feature-icon">⚡</div><h3>Lightning Fast</h3><p>Optimized performance that keeps your team moving at full speed, every single day.</p></div>
+    <div class="feature-card"><div class="feature-icon">🔒</div><h3>Bank-Level Security</h3><p>Enterprise-grade encryption and compliance keeps your data safe and private.</p></div>
+    <div class="feature-card"><div class="feature-icon">📊</div><h3>Real-Time Analytics</h3><p>Beautiful dashboards give you insights to make smarter business decisions.</p></div>
+    <div class="feature-card"><div class="feature-icon">🤝</div><h3>Team Collaboration</h3><p>Work together seamlessly with real-time editing, comments, and notifications.</p></div>
+    <div class="feature-card"><div class="feature-icon">🔗</div><h3>100+ Integrations</h3><p>Connect with the tools you already love — Slack, GitHub, Jira, and more.</p></div>
+    <div class="feature-card"><div class="feature-icon">📱</div><h3>Mobile Ready</h3><p>Full-featured mobile apps for iOS and Android so you work from anywhere.</p></div>
+  </div>
+</section>
+<section class="pricing" id="pricing">
+  <h2 class="title">Simple Pricing</h2>
+  <p class="subtitle">No hidden fees. Cancel anytime.</p>
+  <div class="pricing-grid">
+    <div class="price-card">
+      <h3>Starter</h3>
+      <div class="price">$9<span>/mo</span></div>
+      <ul><li>5 Team Members</li><li>10 GB Storage</li><li>Basic Analytics</li><li>Email Support</li></ul>
+      <a href="#" class="price-btn">Get Started</a>
+    </div>
+    <div class="price-card popular">
+      <div class="popular-badge">⭐ Most Popular</div>
+      <h3>Pro</h3>
+      <div class="price">$29<span>/mo</span></div>
+      <ul><li>25 Team Members</li><li>100 GB Storage</li><li>Advanced Analytics</li><li>Priority Support</li></ul>
+      <a href="#" class="price-btn">Get Started</a>
+    </div>
+    <div class="price-card">
+      <h3>Enterprise</h3>
+      <div class="price">$99<span>/mo</span></div>
+      <ul><li>Unlimited Members</li><li>1 TB Storage</li><li>Custom Analytics</li><li>24/7 Dedicated Support</li></ul>
+      <a href="#" class="price-btn">Contact Sales</a>
+    </div>
+  </div>
+</section>
+<footer><p>© 2026 <span>SaaSify</span>. All rights reserved. Built with ❤️</p></footer>
+</body>
+</html>
